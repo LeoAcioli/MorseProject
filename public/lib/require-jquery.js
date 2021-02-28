@@ -7830,7 +7830,7 @@ jQuery.extend({
 			url: url,
 			type: "GET",
 			dataType: "text",
-			async: false,
+			async: true,
 			global: false,
 			success: jQuery.globalEval
 		});
