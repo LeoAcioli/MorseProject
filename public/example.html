@@ -9,9 +9,14 @@
 </header>
 	<head>
 		<!-- Required File -->
-		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
 	</head>
-		<script data-main="capital_one" src="require-jquery.js"></script>
+
+<script data-main="capital_one">
+var url = "require-jquery.js";
+$.getScript(url);
+</script>
+
 		<script>
 			$(function(){
 	require(['account'], function (account) {
