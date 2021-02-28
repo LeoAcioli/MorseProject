@@ -1,36 +1,53 @@
-<!-- //
-/*
- * Author: Vincent K. Sam
- * Created on: May 1, 2015
- */
-// -->
-<html>
-	<head>
-		
-		<!-- Required File -->
-		<script data-main="capital_one" src="require-jquery.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 
-		<script>
-			$(function(){
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Morsel</title>
+  <link rel="shorcut icon" type="image/x-icon" href="logoad.png">
+  <!--first 4 are BOOTSTRAP-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/31e213ab78.js" crossorigin="anonymous"></script> <!--for icons-->
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'> <!--for google fonts-->
+  <!--><link href="main.css?v=<?php echo time(); ?>" rel="stylesheet" /> <!--LOOKS DIFFERENT ON PHP!-->
+  <link href="main.css">
+</head>
+<body class="index-page">
 
-				require(['customer'], function (customer) {
-					var apikey = '78f6ece0ec67d84fa9eea0d360be7ac4';
-					customerDemo(apikey, customer); 
-				});
-			});
+<br><br>
+<h1><strong>Welcome to the Morsel App!</strong></h1>
+<br>
 
-		function customerDemo (apikey, customer) {
-			var customerAccount = customer.initWithKey(apikey);
-			var customerInfo = customerAccount.getCustomers()[0];
-			console.log("[Customer - Get All Customers] : Sample Customer: " + customerInfo.first_name);
-			$('#customer').html("Bank Customer: <b>" + customerInfo.first_name + " " + customerInfo.last_name + "</b>");
-		}
+<div class="sub-header">
+<text style="font-size:20px"><i>With Morsel, you are able to access your most important information using a futuristic Morse code device!  </i></text>
+</div>
+<br>
 
-		</script>
-	</head>
-	<body>
-		<p>Nessie is Real!</p><br/>
-		Consume the API to learn more about...<br/><br/> 
-		<div id="customer"></div>
-	</body>
-</html>
+<div style="background-color:#172E74;border-radius: 25px;width:1100px; margin:0 auto;">
+
+<br><br><br>
+
+  <div class="col-md-12"><a class="btn btn-default btn btn-outline-danger rec" href="#" role="button" style="color:white;"><strong>Capital One Bank</strong></a></div>
+<br>
+
+<div class="row">
+  <div class="col-md-6"><a class="btn btn-default btn btn-light sqr" href="#" role="button" style="color:red;"><strong>Twilio</strong></a></div>
+  <div class="col-md-6"><a class="btn btn-default btn btn-success sqr-google" href="#" role="button"><strong>Google Calendar</strong></a></div>
+</div>
+
+<br>
+
+  <div class="col-md-12"><a class="btn btn-default btn btn-outline-warning rec" href="#" role="button"><strong>Google Docs</strong></a></div>
+
+<br>
+
+  <div class="col-md-12"><a class="btn btn-default btn btn-info rec" href="#" role="button"><strong>Weather</strong></a></div>
+
+<br>
+
+</div>
+
+</body>
