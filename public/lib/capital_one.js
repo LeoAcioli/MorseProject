@@ -13,7 +13,7 @@ require(['account', 'atm', 'bills', 'branch', 'customer', 'deposit', 'withdrawal
 define('capital_one', function() {
 	"use strict";
 	var Config = {
-		baseUrl: 'http://api.nessieisreal.com:80',
+		baseUrl: 'http://api.nessieisreal.com:80/enterprise',
 		apiKey: function() {
 			return this.apiKey;
 		},
